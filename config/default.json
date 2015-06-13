@@ -1,0 +1,9 @@
+{
+  "priceServiceConfig": {
+    "host": "http://localhost:5984",
+    "credit": {
+      "initialLimit": 100,
+      "initialDays": 1
+    }
+  }
+}

@@ -4,9 +4,13 @@ var   express = require('express')
     , winston = require('winston')
     , cookieParser = require('cookie-parser')
     , bodyParser = require('body-parser')
+    , config = require('config');
 
 var routes = require('./routes/index');
 var price = require('./routes/price');
+
+var serviceConfig = config.get('priceServiceConfig.host');
+winston.info(serviceConfig);
 
 var app = express();
 
